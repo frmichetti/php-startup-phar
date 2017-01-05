@@ -1,2 +1,5 @@
 .idea/
+build/*
+run/config.ini
+run/myapp.phar
 
