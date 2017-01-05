@@ -17,12 +17,12 @@
     <orderEntry type="module-library">
       <library name="PHARS">
         <CLASSES>
-          <root url="phar://$MODULE_DIR$/run/myapp.phar/" />
           <root url="phar://$MODULE_DIR$/build/myapp.phar/" />
+          <root url="phar://$MODULE_DIR$/run/myapp.phar/" />
         </CLASSES>
         <SOURCES>
-          <root url="phar://$MODULE_DIR$/run/myapp.phar/" />
           <root url="phar://$MODULE_DIR$/build/myapp.phar/" />
+          <root url="phar://$MODULE_DIR$/run/myapp.phar/" />
         </SOURCES>
       </library>
     </orderEntry>

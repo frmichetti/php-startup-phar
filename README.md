@@ -1,2 +1,2 @@
 # php-startup-phar
-Getting Start with PHP phar Files
+Getting Started with PHP phar Files
