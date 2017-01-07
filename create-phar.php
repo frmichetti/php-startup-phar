@@ -1,4 +1,4 @@
-<?php
+<?
 function recurse_copy($src,$dst) {
 
     $dir = opendir($src);
@@ -20,7 +20,7 @@ function recurse_copy($src,$dst) {
 }
 ?>
 
-<?php
+<?
 /**
  * Created by PhpStorm.
  * User: felipe
@@ -33,8 +33,10 @@ $buildRoot = __DIR__ . "/build";
 
 $publicRoot = __DIR__ . "/run";
 
+$appName = 'myapp.phar';
+
 // create with alias "myapp.phar"
-$phar = new Phar($buildRoot . "/myapp.phar", FilesystemIterator::CURRENT_AS_FILEINFO | FilesystemIterator::KEY_AS_FILENAME, 'myapp.phar');
+$phar = new Phar($buildRoot . "/" . $appName, FilesystemIterator::CURRENT_AS_FILEINFO | FilesystemIterator::KEY_AS_FILENAME, $appName);
 
 // add all files in the project
 $phar->buildFromDirectory($srcRoot);
